@@ -6,14 +6,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    MatSliderModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
     ])
+    
   ],
   declarations: [
     AppComponent,
@@ -23,6 +26,7 @@ import { ProductListComponent } from './product-list/product-list.component';
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
+
 
 
 /*
